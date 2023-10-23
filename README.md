@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/hpqahuumsclpfap2/branch/master?svg=true)](https://ci.appveyor.com/project/Greymassive/carddelivery/branch/master)
+[![Java CI with Gradle](https://github.com/Greymassive/CardDelivery/actions/workflows/gradle.yml/badge.svg)](https://github.com/Greymassive/CardDelivery/actions/workflows/gradle.yml)
