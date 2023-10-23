@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.5.3'
+    testImplementation 'io.rest-assured:rest-assured:5.2.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.2.0'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.3'
+    testImplementation 'com.codeborne:selenide:6.17.1'
+}
+test {
+    useJUnitPlatform()
+
+    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+}
