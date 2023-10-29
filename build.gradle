@@ -22,6 +22,7 @@ dependencies {
     testImplementation 'io.rest-assured:json-schema-validator:5.2.0'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.3'
     testImplementation 'com.codeborne:selenide:6.17.1'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
 }
 test {
     useJUnitPlatform()
